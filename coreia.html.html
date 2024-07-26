@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yanca Dantas">
+    <title>Portal Coréia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h3 {
+            color: #333;
+        }
+        h5 {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        #imagem1, #imagem2 {
+            margin: 10px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        form {
+            margin: 20px 0;
+        }
+        label {
+            margin-right: 10px;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 10px 15px;
+            border: none;
+            color: white;
+            background-color: #4c8baf;
+            margin-right: 10px;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #0b99eb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Notícias do Dia</h1>
+
+    <h3>Cha Eun Woo escolheu seu próximo projeto: ele estrelará um Kdrama ao lado de Park Eun Bin.</h3>
+    <div id="imagem1">
+        <img src="imagens/cha e park.jpg" alt="Cha Eun Woo e Park Eun Bin">
+    </div>
+    <h5>
+        No dia 26, Fantagio, a agência de Cha Eun Woo, confirmou que o novo drama intitulado 'The Wonder Fools' (título provisório) é um projeto
+        para qual Eun Woo recebeu oferta e está avaliando positivamente. O drama é estrelado por Park Eun-bin; ambos já atuaram juntos.<br><br>
+        Nota da Fantagio:<br><br>
+        "Olá, este é a Fantagio.<br><br>
+        O drama 'The Wonder Fools' é um projeto para o qual Cha Eun-Woo recebeu uma oferta e está avaliando positivamente. Agradecemos seu interesse
+        e amor pelo artista, Cha Eunwoo, e pedimos o seu apoio contínuo.<br>
+        Obrigado."
+    </h5>
+
+    <form>
+        <fieldset>
+            <legend>Você acha que Cha Eunwoo e Park Eunbin devem atuar juntos novamente?</legend>
+            <label for="sim">Sim, eles têm química!</label>
+            <input type="radio" name="enquete" id="sim" value="Sim"><br>
+            <label for="nao">Não, não gosto da atuação deles juntos.</label>
+            <input type="radio" name="enquete" id="nao" value="Não"><br>
+            <label for="nao-sei">Não sei, não assisti os dois juntos.</label>
+            <input type="radio" name="enquete" id="nao-sei" value="Não sei"><br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+
+    <h3>Lovely Runner chegará à Netflix ainda este ano.</h3>
+    <div id="imagem2">
+        <img src="imagens/lovely ruuner.jpg" alt="Lovely Runner">
+    </div>
+    <h5>
+        Estrelada pelos atores Byeon Woo-seok e Kim Hye-yoon, a trama de “Lovely Runner” foi um sucesso desde sua estreia, considerado um dos melhores
+        doramas de 2024. A Netflix anunciou o novo dorama “Lovely Runner” para integrar seu catálogo, ele estará disponível a partir do dia primeiro de agosto.<br><br>
+        Confira a sinopse oficial do novo drama:<br><br>
+        “Ryu Seon Jae é uma grande estrela que está sob os holofotes desde sua estreia. Sua vida parece perfeita, mas estar na indústria do entretenimento
+        o desgastou completamente. Im Sol ama Ryu Seon Jae como um fã apaixonado. Quando ela era pequena, ela sofreu um acidente. Por conta disso, ela desistiu
+        de seu sonho, mas ouvir a música de Ryu Seon Jae no rádio lhe deu conforto e ela se tornou fã dele.<br>
+        Um dia, Im Sol ouve a notícia de que Ryu Seon Jae acabou com sua própria vida. Ela sente profunda tristeza com a notícia trágica. Milagrosamente, Im Sol
+        de alguma forma viaja no tempo até 15 anos atrás. Lá, ela enfrenta Ryu Seon Jae como um estudante do ensino médio de 19 anos. Ela luta para evitar seu futuro
+        trágico.”
+    </h5>
+
+    <form action="mailto:teste@email.com" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Cadastro</legend>
+            Nome:<br>
+            <input type="text" name="nome" placeholder="Seu nome" required><br><br>
+            E-mail:<br>
+            <input type="email" name="mail" placeholder="Seu email" required><br><br>
+            Quer ficar por dentro de tudo que acontece na Coreia? Assinale abaixo!<br>
+            <label for="receber-updates">Sim, desejo receber atualizações por e-mail.</label>
+            <input type="radio" name="receber-updates" id="receber-updates" value="Sim"><br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+
+</body>
+</html>
